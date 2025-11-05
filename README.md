@@ -4,6 +4,23 @@ This repository contains the code and documentation for a 4-DOF (Degrees of Free
 
 ---
 
+## 📷 Project Photo
+
+![4-DOF Robotic Arm mounted on rover](images/arm_on_rover.jpg)
+
+---
+
+## 🚗 Rover Integration
+
+The robotic arm is **mounted on an RC rover platform**. The arm and the rover are **controlled independently**:
+
+- The **rover** handles locomotion and is driven by its own controller / receiver.
+- The **robotic arm** is operated separately (as described below) using its own Arduino Mega 2560 and joystick modules.
+
+Mounting the arm on the rover makes the system mobile, allowing pick-and-place and object manipulation while moving around the workspace.
+
+---
+
 ## 📌 Features
 
 - 4-DOF robotic arm movement (gripper, wrist, elbow, and base)
