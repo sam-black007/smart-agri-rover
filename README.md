@@ -89,14 +89,6 @@ Mounting the arm on the rover makes the system mobile, allowing pick-and-place a
 
 ---
 
-## 👨‍💻 Contributors
-
-- [Anshuman](https://github.com/Anshuman-02)
-- [Utkarsh Maurya](https://github.com/UtkarshMaurya021)
-- [Mayank Mankar](https://github.com/MayankMankar1)
-
----
-
 ## 📜 License
 
 This project is open source and available under the [MIT License](LICENSE).
