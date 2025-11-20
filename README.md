@@ -82,13 +82,6 @@ Mounting the arm on the rover makes the system mobile, allowing pick-and-place a
 
 ---
 
-## 📅 Project Timeline
-
-- **Phase 1**: Literature review, design planning (Aug–Dec 2024)
-- **Phase 2**: Implementation and testing (Jan–Apr 2025)
-
----
-
 ## 📜 License
 
 This project is open source and available under the [MIT License](LICENSE).
