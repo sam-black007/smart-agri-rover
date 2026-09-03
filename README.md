@@ -20,6 +20,8 @@ The rover is a low-cost, educational prototype tailored for precision agricultur
 
 The **rover** handles locomotion and is driven by its own controller / receiver, while the **robotic arm** is operated separately using its own Arduino Mega 2560 and joystick modules. This keeps each subsystem modular and independently controllable.
 
+The rover drive train uses **6 DC motors** split across **two BTS7960 motor drivers** — 3 motors wired in parallel on each driver (3 on the left side, 3 on the right side).
+
 ---
 
 ## 📌 Features
@@ -64,6 +66,24 @@ The **rover** handles locomotion and is driven by its own controller / receiver,
 ---
 
 ## 🔌 Circuit Connections
+
+### Rover Drive System (6 motors / 2× BTS7960)
+
+![3 motors wired to one BTS7960 driver](3motor.png)
+
+Each BTS7960 motor driver drives **three DC motors wired in parallel** on a single channel. Driver 1 powers the 3 left motors and Driver 2 powers the 3 right motors.
+
+| Terminal on BTS7960 | Wire from each of the 3 motors |
+|:---:|---|
+| **OUT_A** (motor +) | Motor 1 `+`, Motor 2 `+`, Motor 3 `+` |
+| **OUT_B** (motor −) | Motor 1 `−`, Motor 2 `−`, Motor 3 `−` |
+| **RPWM** | → controller PWM (forward) |
+| **LPWM** | → controller PWM (reverse) |
+| **R_EN / L_EN** | → `HIGH` (jumper to 5 V to enable) |
+| **VCC / B+** | → battery `+` |
+| **GND / B−** | → battery `−` (common ground to controller) |
+
+> All three motors share the same output pair, so they spin together at the same speed. Wire the polarity identically on all three or one will run backward.
 
 ### Joystick to Arduino
 | Joystick Pin | Arduino Pin |
