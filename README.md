@@ -10,6 +10,14 @@ The **Smart Agri Rover** is an agricultural rover designed for automated farming
 
 ---
 
+## 📷 Complete Project
+
+![Smart Agri Rover complete project](images/complete-project.jpg)
+
+The full project — rover chassis with earth hogger, sapling-planting robotic arm, and soil plow — assembled and ready for fieldwork.
+
+---
+
 ## 🚜 What It Does
 
 The rover is a low-cost, educational prototype tailored for precision agriculture:
